@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OneHumanLife/static/css/main.222b9120.css",
+    "main.js": "/OneHumanLife/static/js/main.85f326b9.js",
+    "static/js/787.28cb0dcd.chunk.js": "/OneHumanLife/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/OneHumanLife/index.html",
+    "main.222b9120.css.map": "/OneHumanLife/static/css/main.222b9120.css.map",
+    "main.85f326b9.js.map": "/OneHumanLife/static/js/main.85f326b9.js.map",
+    "787.28cb0dcd.chunk.js.map": "/OneHumanLife/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.222b9120.css",
+    "static/js/main.85f326b9.js"
+  ]
+}
