@@ -1,0 +1,173 @@
+/* Global styles */
+
+/* Set default font family and size */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Use a grid-based layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077b6;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+/* Style grid */
+#timeLeft {
+  display: grid;
+  grid-template-columns: repeat(52, 30px);
+  grid-template-rows: repeat(100, 30px);
+  gap: 1px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#timeLeft div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+#timeLeft div:hover {
+  background-color: #eee;
+}
+
+/* Apply color scheme */
+/* Primary color */
+:root {
+  --primary-color: #0077b6;
+}
+
+/* Secondary color */
+:root {
+  --secondary-color: #023e8a;
+}
+
+/* Text color */
+:root {
+  --text-color: #333;
+}
+
+/* Apply color scheme to elements */
+button {
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+label,
+#timeLeft div {
+  color: var(--text-color);
+}
+
+/* Responsive design */
+/* Small screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  #timeLeft {
+    grid-template-columns: repeat(26, 30px);
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #timeLeft {
+    grid-template-columns: repeat(13, 30px);
+  }
+}
+
+
+.cell {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.week-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.axis-label {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: rem;
+  font-size: 1.2rem;
+}
+
+.axis-labelSide {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform-origin: top left;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
